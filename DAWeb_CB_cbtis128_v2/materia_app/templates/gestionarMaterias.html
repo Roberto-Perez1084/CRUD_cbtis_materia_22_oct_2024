@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %} Gestion de materias {% endblock %}
+
+{% block cuerpo %}
+    <h1>Gestionar Materias :: Roberto Pérez</h1>
+    {% for m in lasmaterias %}
+        <ol>{{m.codigo}}\----/{{m.nombre}}/----\{{m.creditos}}</ol>
+    {% endfor %}
+{% endblock  %}
